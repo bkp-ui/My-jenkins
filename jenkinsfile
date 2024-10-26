@@ -4,24 +4,24 @@ pipeline {
     stages {
        stage ('BUILD') {
            steps {
-                sh 'sleep 5'
+                sh 'test file build'
            }
        } 
        
        stage ('TEST') {
            steps {
-                sh 'sleep 5'
+                sh 'file to test'
            }
        }
         
        stage ('DEPLOY') {
            steps {
-                sh 'sleep 5'
+                sh 'file to deploy'
            }
        }  
        stage ('DEPLOY1') {
            steps {
-                sh 'sleep 5'
+                sh 'file to deploy second time'
            }
        }     
     }
