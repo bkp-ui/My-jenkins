@@ -4,24 +4,24 @@ pipeline {
     stages {
        stage ('BUILD') {
            steps {
-                sh 'test file build'
+                sh  'echo"test file build"'
            }
        } 
        
        stage ('TEST') {
            steps {
-                sh 'file to test'
+                sh 'echo"file to test"'
            }
        }
         
        stage ('DEPLOY') {
            steps {
-                sh 'file to deploy'
+                sh 'echo"file to deploy"'
            }
        }  
        stage ('DEPLOY1') {
            steps {
-                sh 'file to deploy second time'
+                sh 'echo"file to deploy second time"'
            }
        }     
     }
